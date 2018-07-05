@@ -4,6 +4,7 @@
   "description": "Simple api for todo",
   "main": "server.js",
   "scripts": {
+    "preinstall": "npm i grunt -g",
     "start": "./node_modules/.bin/grunt nodemon",
     "test": "istanbul cover node_modules/mocha/bin/_mocha && codecov"
   },
