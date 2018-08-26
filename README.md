@@ -12,7 +12,7 @@ $ node server.js
 
 _Note: To use code coverage (codecov), go to codecov.io, signup (free), and get the UUID (Repository Upload Token) from the "Settings" section. You then just export the value as system variable._
 ```
-export CODECOV_TOKEN="84387dce-2836-4f0b-8566-2cb590e250fd"
+export CODECOV_TOKEN="put your UUID token here"
 ```
 
 ## To unit test API endpoints
