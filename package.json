@@ -4,9 +4,8 @@
   "description": "Simple api for todo",
   "main": "server.js",
   "scripts": {
-    "preinstall": "npm i grunt -g",
-    "start": "./node_modules/.bin/grunt nodemon",
-    "test": "istanbul cover node_modules/mocha/bin/_mocha && codecov"
+    "integration-test": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha && codecov",
+    "unit-test": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha && codecov"
   },
   "repository": {
     "type": "git",
@@ -33,7 +32,6 @@
     "opbeat": "4.17.0"
   },
   "devDependencies": {
-    "chai": "4.1.2",
     "codecov": "3.0.4",
     "istanbul": "0.4.5",
     "mocha": "5.2.0",

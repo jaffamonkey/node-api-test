@@ -5,9 +5,14 @@ $ npm install
 $ node server.js
 ```
 
-## To test API endpoints
+## To integration test API endpoints
 ```
-./node_modules/.bin/istanbul cover node_modules/mocha/bin/_mocha && codecov
+./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/mocha test/integration/ && codecov
+```
+
+## To unit test API endpoints
+```
+./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/mocha test/unit/ && codecov
 ```
 
 ## Documentation
@@ -94,5 +99,3 @@ Error Response:
 
 {status: false, error: "Deleting todo is not successful"}
 ```
-
-

@@ -6,7 +6,7 @@ var should = require('should'),
 
 require('sinon-mongoose');
 
-var TodoModel = require('../../../app/models/todo.model');
+var TodoModel = require('../../app/models/todo.model');
 
 describe('TodoController testing', function () {
 
@@ -23,7 +23,7 @@ describe('TodoController testing', function () {
 				}
 			}
 			var res = {}, next = {};
-			var TodoController = require('../../../app/controllers/todo.controller')(Book);
+			var TodoController = require('../../app/controllers/todo.controller')(Book);
 			TodoController.PostTodo(req, res, next);
 			sinon.assert.calledOnce(saveStub);
 		});
@@ -67,7 +67,7 @@ describe('TodoController testing', function () {
 			var TodoMock = sinon.mock(TodoModel);
 
 			TodoMock
-			.expects('remove')
+			.expects('deleteOne')
 			.withArgs({_id: 12345})
 			.yields(null, 'DELETED');
 
