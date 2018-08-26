@@ -12,7 +12,7 @@ $ node server.js
 ./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/mocha test/integration/ && codecov
 ```
 
-_Note: To use code coverage (codecov), go to codecov.io, signup (free), and get the UUID (Repository Upload Token) from the "Settings" section. You then just export the value as system variable._
+_Note: To use code coverage (codecov) when running on local machine, go to codecov.io, signup (free), and get the UUID (Repository Upload Token) from the "Settings" section. You then just export the value as system variable. This is not a necessary step, if running tests, using one of the many supported CI providers._
 ```
 export CODECOV_TOKEN="put your UUID token here"
 ```
