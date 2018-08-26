@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/rajzshkr/todoapi.git"
+    "url": "git+ssh://git@github.com/jaffamonkey/node-api-test.git"
   },
   "bin": {
     "codecov": "./bin/codecov"
@@ -20,30 +20,26 @@
     "express",
     "todo"
   ],
-  "author": "Raja Sekar <rajasekar89be@gmail.com> (http://rajasekarm.com)",
+  "author": "jaffamonkey <jaffamonkey@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/rajzshkr/todoapi/issues"
-  },
-  "homepage": "https://github.com/rajzshkr/todoapi#readme",
   "dependencies": {
-    "body-parser": "^1.14.2",
-    "codecov": "^1.0.1",
-    "cors": "^2.7.1",
-    "express": "^4.13.3",
-    "method-override": "^2.3.5",
-    "mongoose": "^4.3.5",
-    "morgan": "^1.6.1",
-    "opbeat": "^3.6.6"
+    "body-parser": "1.18.3",
+    "codecov": "3.0.4",
+    "cors": "2.8.4",
+    "express": "4.16.3",
+    "method-override": "3.0.0",
+    "mongoose": "5.2.9",
+    "morgan": "1.9.0",
+    "opbeat": "4.17.0"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "codecov": "^1.0.1",
-    "istanbul": "^0.4.2",
-    "mocha": "^2.4.5",
-    "should": "^8.2.2",
-    "sinon": "^1.17.3",
-    "sinon-mongoose": "^1.2.1",
-    "supertest": "^1.2.0"
+    "chai": "4.1.2",
+    "codecov": "3.0.4",
+    "istanbul": "0.4.5",
+    "mocha": "5.2.0",
+    "should": "13.2.3",
+    "sinon": "6.1.5",
+    "sinon-mongoose": "2.2.1",
+    "supertest": "3.1.0"
   }
 }
