@@ -1,4 +1,6 @@
 
+[![codecov](https://codecov.io/gh/jaffamonkey/node-api-test/branch/master/graph/badge.svg)](https://codecov.io/gh/jaffamonkey/node-api-test)
+
 ## To run API server
 ```
 $ npm install
