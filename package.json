@@ -4,15 +4,12 @@
   "description": "Simple api for todo",
   "main": "server.js",
   "scripts": {
-    "integration-test": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha && codecov",
-    "unit-test": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha && codecov"
+    "integration-test": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha ./test/integration && ./node_modules/.bin/codecov",
+    "unit-test": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha ./test/unit && ./node_modules/.bin/codecov"
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/jaffamonkey/node-api-test.git"
-  },
-  "bin": {
-    "codecov": "./bin/codecov"
   },
   "keywords": [
     "Node",
