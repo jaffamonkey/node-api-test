@@ -71,7 +71,7 @@ describe('TodoController testing', function () {
 			.withArgs({_id: 12345})
 			.yields(null, 'DELETED');
 
-			TodoModel.remove({_id: 12345}, function(err, result){
+			TodoModel.deleteOne({_id: 12345}, function(err, result){
 				TodoMock.verify();
 				TodoMock.restore();
 				done();
@@ -99,5 +99,4 @@ describe('TodoController testing', function () {
 
 		});
 	});
-
 });

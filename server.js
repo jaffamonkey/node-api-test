@@ -26,13 +26,13 @@ require('./app/router/router')(app);
 var db;
 
 if(process.env.NODE_ENV === "test") {
-	db = mongoose.connect(config.test_db);
+	db = mongoose.connect(config.db, { useNewUrlParser: true })
 	app.listen(config.test_port, function(err){
 	  if(err) throw err;
 	  console.log("App listening on port "+config.test_port);
 	});
 } else {
- 	db = mongoose.connect(config.db);
+ 	db = mongoose.connect(config.db, { useNewUrlParser: true });
         app.listen(config.port, function(err){
 	  if(err) throw err;
 	  console.log("App listening on port "+config.port);

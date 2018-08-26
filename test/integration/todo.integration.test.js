@@ -34,7 +34,7 @@ describe('Todo CRUD integration testing', function () {
 	
 	describe('Post a todo', function () {
 		it('Should allow post to post a todo and return _id', function (done) {
-			var params = { todo: "Todo fro testing" };
+			var params = { todo: "Todo for testing" };
 			agent
 			.post('/api/todos')
 			.send(params)
