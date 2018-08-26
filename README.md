@@ -1,11 +1,11 @@
 
-## To run app
+## To run API server
 ```
 $ npm install
 $ node server.js
 ```
 
-## To run app
+## To test API endpoints
 ```
 ./node_modules/.bin/istanbul cover node_modules/mocha/bin/_mocha && codecov
 ```
