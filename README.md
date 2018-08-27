@@ -30,7 +30,7 @@ A brief introduction of all api endpoints covered in this tutorial.
 
 ### Get all Todo:
 
-url -  http://apitodo.herokuapp.com/api/todos   
+url -  /api/todos   
 method - get
 
 ```javascript
@@ -50,7 +50,7 @@ Error Response:
 
 ### Post a todo
 
-url - http://apitodo.herokuapp.com/api/todos/
+url - /api/todos/
 method - post
 params: {todo: "Your todo"} 
 
@@ -76,7 +76,7 @@ Error Response:
 
 ### Update status
 
-url: http://apitodo.herokuapp.com/api/todos/_id
+url: /api/todos/_id
 
 method - put
 
@@ -95,7 +95,7 @@ Error Response:
 
 ```
 ### Deleting a todo
-url: http://apitodo.herokuapp.com/api/todos/_id
+url: /api/todos/_id
 method: delete
 
 ```javascript
