@@ -33,18 +33,18 @@ A brief introduction of all api endpoints covered in this tutorial.
 url -  /api/todos   
 method - get
 
-```javascript
-Success Response:
-
+#### Success Response
+```
 {
   status: true,
   todo :[{
   		"_id":"56e7975dbf17876b095a0f21","todo":"From mock","__v":0,"created_by":"2016-03-15T05:02:21.041Z","completed":false
   }]
 }
+```
 
-Error Response:
-
+####  Error Response
+```
 {status: false, error: "Message"}
 ```
 
@@ -56,55 +56,50 @@ params: {todo: "Your todo"}
 
 Note - By default it is marked as not completed
 
-```javascript
-
-Success Response:
-
+#### Success Response
+```
 {
   status: true,
   todo:[{
   		"_id":"56e7975dbf17876b095a0f21","todo":"From mock","__v":0,"created_by":"2016-03-15T05:02:21.041Z","completed":false
   }]
 }
+```
 
-Error Response:
-
+#### Error Response
+```
 {status: false, error: "Message"}
-
-
 ```
 
 ### Update status
 
 url: /api/todos/_id
-
 method - put
-
 params: {completed: status }
-
 status - boolean value
 
-```javascript
-
-Success Response:
-
-{status: true, message: "Status updated successfully"}
-
-Error Response:
-{status: false, error: "Status not updated"}
-
+#### Success Response
 ```
+{status: true, message: "Status updated successfully"}
+```
+
+#### Error Response
+```
+{status: false, error: "Status not updated"}
+```
+
 ### Deleting a todo
+
 url: /api/todos/_id
 method: delete
 
+#### Success Response
+
 ```javascript
-
-Success Response:
-
 {status: true, message: "Todo deleted successfully"}
+```
 
-Error Response:
-
+#### Error Response
+```
 {status: false, error: "Deleting todo is not successful"}
 ```
