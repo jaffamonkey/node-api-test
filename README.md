@@ -30,8 +30,8 @@ A brief introduction of all api endpoints covered in this tutorial.
 
 ### Get all Todo:
 
-url -  /api/todos   
-method - get
+* url -  /api/todos
+* method - get
 
 #### Success Response
 ```
@@ -50,9 +50,9 @@ method - get
 
 ### Post a todo
 
-url - /api/todos/
-method - post
-params: {todo: "Your todo"} 
+* url - /api/todos/
+* method - post
+* params: {todo: "Your todo"} 
 
 Note - By default it is marked as not completed
 
@@ -73,10 +73,10 @@ Note - By default it is marked as not completed
 
 ### Update status
 
-url: /api/todos/_id
-method - put
-params: {completed: status }
-status - boolean value
+* url: /api/todos/_id
+* method - put
+* params: {completed: status }
+* status - boolean value
 
 #### Success Response
 ```
@@ -90,8 +90,8 @@ status - boolean value
 
 ### Deleting a todo
 
-url: /api/todos/_id
-method: delete
+* url: /api/todos/_id
+* method: delete
 
 #### Success Response
 
