@@ -85,7 +85,6 @@ describe('TodoController testing', function () {
 		it('Should update the todo with new value', function (done) {
 			var todoMock = sinon.mock(new TodoModel({ todo: 'Save new todo from mock'}));
 			var todo = todoMock.object;
-
 			todoMock
 			.expects('save')
 			.withArgs({_id: 12345})

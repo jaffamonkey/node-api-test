@@ -32,6 +32,20 @@ describe('Todo CRUD integration testing', function () {
 		
 	});
 	
+	describe('Get a todo', function () {
+
+		it('Should get status equal to 400', function (done) {
+			agent
+			.get('/api/todos/1')
+			.expect(404)
+			.end(function(err, results){
+				// results.body.status.should.equal(true);
+				done();
+			});
+		});
+		
+	});
+
 	describe('Post a todo', function () {
 		it('Should allow post to post a todo and return _id', function (done) {
 			var params = { todo: "Todo for testing" };
@@ -81,6 +95,17 @@ describe('Todo CRUD integration testing', function () {
 			.send(newTodo)
 			.end(function(err, result){
 				id = result.body.todo._id;
+				done();
+			})
+		});
+
+		it('should return 404 if todo not found',function (done) {
+			var params = { completted: true };
+			agent
+			.put('/api/todos/' +id)
+			.send(params)
+			.expect(200)
+			.end(function(err, result){
 				done();
 			})
 		});

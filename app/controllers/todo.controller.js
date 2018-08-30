@@ -47,6 +47,15 @@ var TodoCtrl = function(Todo){
 		});
 	}
 
+	TodoObj.getTodo = function(req, res, next){
+		Todo.getTodo({_id : req.params.todo_id }, function(err, todos){
+			if(err) {
+				res.json({status: false, error: "Getting todo is not successfull"});
+			}
+			res.json({status: true, message: "Todo loaded successfully"});
+		});
+	}
+	
 	return TodoObj;
 }
 
